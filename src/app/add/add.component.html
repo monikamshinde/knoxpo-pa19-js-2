@@ -1,0 +1,37 @@
+
+<div class="container">
+<form [formGroup]="empForm" (ngSubmit)="addEmp(empForm.value);">
+  <div class="form-group row">
+    <label for="txtName" class="col-sm-2 col-form-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtName" placeholder="Name" formControlName="name">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="txtEmail" placeholder="Email" formControlName="email">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtMobile" class="col-sm-2 col-form-label">Mobile</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtMobile" placeholder="mobile" formControlName="mobile">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtJob" class="col-sm-2 col-form-label">Job Title</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="txtJob" placeholder="job title" formControlName="job">
+    </div>
+  </div>
+  
+  
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Add Employee</button>
+    </div>
+  </div>
+</form>
+</div>
+
